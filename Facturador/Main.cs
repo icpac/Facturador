@@ -4,14 +4,8 @@
  * tlacaelel.icpac@gmail.com
  * https://github.com/icpac/Facturador
  * */
+
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Facturador
@@ -21,11 +15,20 @@ namespace Facturador
         public Main()
         {
             InitializeComponent();
+            IsMdiContainer = true;
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FConsulta cnst = new FConsulta();
+
+            cnst.Parent = MdiParent;
+            cnst.Show();
         }
     }
 }
