@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Tlacaelel iCPAC
+ * 2021
+ * tlacaelel.icpac@gmail.com
+ * https://github.com/icpac/Facturador
+ * */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
