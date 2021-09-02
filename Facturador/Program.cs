@@ -6,6 +6,8 @@
  * */
 using System;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Collections.Specialized;
 
 namespace Facturador
 {
@@ -19,7 +21,15 @@ namespace Facturador
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+
+            Main app = new Main();
+
+            if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+            {
+                app.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            }
+
+            Application.Run(app);
         }
     }
 }

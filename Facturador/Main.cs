@@ -12,6 +12,8 @@ namespace Facturador
 {
     public partial class Main : Form
     {
+        public string ConnectionString { get; set; }
+
         public Main()
         {
             InitializeComponent();
