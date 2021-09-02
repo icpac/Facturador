@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facturador", "Facturador\Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facturador.Module", "Facturador.Module\Facturador.Module.csproj", "{787293E4-1447-4C86-BC58-ED6C1A81CD6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "icp.Datos", "icp.Datos\icp.Datos.csproj", "{4DA24602-76FB-4819-973F-2CBFE9A42D58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{787293E4-1447-4C86-BC58-ED6C1A81CD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{787293E4-1447-4C86-BC58-ED6C1A81CD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{787293E4-1447-4C86-BC58-ED6C1A81CD6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA24602-76FB-4819-973F-2CBFE9A42D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA24602-76FB-4819-973F-2CBFE9A42D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA24602-76FB-4819-973F-2CBFE9A42D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA24602-76FB-4819-973F-2CBFE9A42D58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
