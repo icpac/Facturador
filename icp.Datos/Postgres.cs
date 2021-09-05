@@ -1,4 +1,10 @@
-﻿using Npgsql;
+﻿/*
+ * Tlacaelel iCPAC
+ * 2021
+ * tlacaelel.icpac@gmail.com
+ * https://github.com/icpac/Facturador
+ * */
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Data;
