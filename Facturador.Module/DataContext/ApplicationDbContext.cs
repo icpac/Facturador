@@ -10,9 +10,8 @@ namespace Facturador.Module.DataContext
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext() : base(nameOrConnectionString: "ConnectionString")
+        public ApplicationDbContext(string conn) : base(nameOrConnectionString: conn)
         {
-
         }
 
         public virtual DbSet<Cliente> ClntObj { get; set; }

@@ -5,6 +5,7 @@
  * https://github.com/icpac/Facturador
  * */
 
+using Facturador.Module.DataContext;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,10 +20,20 @@ namespace Facturador
 {
     public partial class FConsulta : Form
     {
-        public FConsulta()
+        string ConnectionString;
+        private ApplicationDbContext db;
+        public FConsulta(string conn)
         {
             InitializeComponent();
             ShowInTaskbar = false;
+
+            ConnectionString = conn;
+            db = new ApplicationDbContext("ConnecFactura" /*conn*/);
+        }
+
+        private void FConsulta_Load(object sender, EventArgs e)
+        {
+            dataGridViewMain.DataSource = db.ClntObj.ToList();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Facturador
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FConsulta cnst = new FConsulta();
+            FConsulta cnst = new FConsulta(ConnectionString);
 
             cnst.Parent = MdiParent;
             cnst.Show();

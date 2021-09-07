@@ -24,9 +24,9 @@ namespace Facturador
 
             Main app = new Main();
 
-            if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+            if (ConfigurationManager.ConnectionStrings["ConnecFactura"] != null)
             {
-                app.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+                app.ConnectionString = ConfigurationManager.ConnectionStrings["ConnecFactura"].ConnectionString;
             }
 
             Application.Run(app);
