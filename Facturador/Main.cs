@@ -28,15 +28,17 @@ namespace Facturador
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FConsulta cnst = new FConsulta(ConnectionString, typeof(Cliente));
-
-            cnst.Parent = MdiParent;
-            cnst.Show();
+            Consulta(typeof(Cliente));
         }
 
         private void productosServiciosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FConsulta cnst = new FConsulta(ConnectionString, typeof(Producto));
+            Consulta(typeof(Producto));
+        }
+
+        void Consulta(Type tipo)
+        {
+            FConsulta cnst = new FConsulta(ConnectionString, tipo);
 
             cnst.Parent = MdiParent;
             cnst.Show();
