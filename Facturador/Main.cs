@@ -5,6 +5,7 @@
  * https://github.com/icpac/Facturador
  * */
 
+using Facturador.Module.BusinessObjects;
 using System;
 using System.Windows.Forms;
 
@@ -27,7 +28,15 @@ namespace Facturador
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FConsulta cnst = new FConsulta(ConnectionString);
+            FConsulta cnst = new FConsulta(ConnectionString, typeof(Cliente));
+
+            cnst.Parent = MdiParent;
+            cnst.Show();
+        }
+
+        private void productosServiciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FConsulta cnst = new FConsulta(ConnectionString, typeof(Producto));
 
             cnst.Parent = MdiParent;
             cnst.Show();

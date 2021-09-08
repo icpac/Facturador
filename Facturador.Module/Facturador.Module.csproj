@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\Cliente.cs" />
+    <Compile Include="BusinessObjects\Producto.cs" />
     <Compile Include="DataContext\ApplicationDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

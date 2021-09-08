@@ -5,6 +5,7 @@
  * https://github.com/icpac/Facturador
  * */
 
+using Facturador.Module.BusinessObjects;
 using Facturador.Module.DataContext;
 using System;
 using System.Collections.Generic;
@@ -21,19 +22,26 @@ namespace Facturador
     public partial class FConsulta : Form
     {
         string ConnectionString;
-        private ApplicationDbContext db;
-        public FConsulta(string conn)
+        ApplicationDbContext db;
+        Type Objeto;
+
+        public FConsulta(string conn, Type obj)
         {
             InitializeComponent();
             ShowInTaskbar = false;
 
             ConnectionString = conn;
             db = new ApplicationDbContext("ConnecFactura" /*conn*/);
+
+            Objeto = obj;
         }
 
         private void FConsulta_Load(object sender, EventArgs e)
         {
-            dataGridViewMain.DataSource = db.ClntObj.ToList();
+            if (Objeto == typeof(Cliente))
+                dataGridViewMain.DataSource = db.ClntObj.ToList();
+            else
+                dataGridViewMain.DataSource = db.PrdtObj.ToList();
         }
     }
 }
