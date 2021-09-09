@@ -9,5 +9,5 @@ Windows Forms
 
 .Net
 
-![GitHub Logo](Facturador/Facturador.png)
+![Ventana principal](https://github.com/icpac/images/Facturador.png)
 
