@@ -93,7 +93,7 @@
     <Compile Include="BusinessObjects\Cliente.cs" />
     <Compile Include="BusinessObjects\Empresa.cs" />
     <Compile Include="BusinessObjects\Producto.cs" />
-    <Compile Include="DataContext\ApplicationDbContext.cs" />
+    <Compile Include="DataContext\FacturadorDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

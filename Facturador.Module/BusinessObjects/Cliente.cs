@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace Facturador.Module.BusinessObjects
 {
-    [Table("Compania", Schema ="public")]
+    [Table("Cliente", Schema ="public")]
     public class Cliente
     {
         [Key]

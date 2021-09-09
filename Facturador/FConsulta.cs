@@ -22,7 +22,7 @@ namespace Facturador
     public partial class FConsulta : Form
     {
         string ConnectionString;
-        ApplicationDbContext db;
+        FacturadorDbContext db;
         Type Objeto;
 
         public FConsulta(string conn, Type obj)
@@ -31,7 +31,7 @@ namespace Facturador
             ShowInTaskbar = false;
 
             ConnectionString = conn;
-            db = new ApplicationDbContext("ConnecFactura" /*conn*/);
+            db = new FacturadorDbContext("ConnecFactura" /*conn*/);
 
             Objeto = obj;
         }
@@ -39,11 +39,11 @@ namespace Facturador
         private void FConsulta_Load(object sender, EventArgs e)
         {
             if (Objeto == typeof(Cliente))
-                dataGridViewMain.DataSource = db.ClntObj.ToList();
+                dataGridViewMain.DataSource = db.Clientes.ToList();
             else if (Objeto == typeof(Producto))
-                dataGridViewMain.DataSource = db.PrdtObj.ToList();
+                dataGridViewMain.DataSource = db.Productos.ToList();
             else
-                dataGridViewMain.DataSource = db.EmprsObj.ToList();
+                dataGridViewMain.DataSource = db.Empresas.ToList();
         }
     }
 }
