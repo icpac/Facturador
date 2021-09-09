@@ -36,6 +36,11 @@ namespace Facturador
             Consulta(typeof(Producto));
         }
 
+        private void empresaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consulta(typeof(Empresa));
+        }
+
         void Consulta(Type tipo)
         {
             FConsulta cnst = new FConsulta(ConnectionString, tipo);

@@ -24,5 +24,7 @@ namespace Facturador.Module.DataContext
         public virtual DbSet<Cliente> ClntObj { get; set; }
 
         public virtual DbSet<Producto> PrdtObj { get; set; }
+        
+        public virtual DbSet<Empresa> EmprsObj { get; set; }
     }
 }

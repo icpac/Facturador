@@ -34,10 +34,12 @@ namespace Facturador
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catálogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosServiciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
-            this.productosServiciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +48,7 @@ namespace Facturador
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivosToolStripMenuItem,
             this.catálogosToolStripMenuItem,
+            this.configuraciónToolStripMenuItem,
             this.ayudaToolStripMenuItem});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
@@ -84,6 +87,21 @@ namespace Facturador
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
+            // productosServiciosToolStripMenuItem
+            // 
+            this.productosServiciosToolStripMenuItem.Name = "productosServiciosToolStripMenuItem";
+            this.productosServiciosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosServiciosToolStripMenuItem.Text = "Productos/Servicios";
+            this.productosServiciosToolStripMenuItem.Click += new System.EventHandler(this.productosServiciosToolStripMenuItem_Click);
+            // 
+            // configuraciónToolStripMenuItem
+            // 
+            this.configuraciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.empresaToolStripMenuItem});
+            this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
+            this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.configuraciónToolStripMenuItem.Text = "Configuración";
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -106,12 +124,12 @@ namespace Facturador
             this.statusStripMain.TabIndex = 1;
             this.statusStripMain.Text = "statusStrip1";
             // 
-            // productosServiciosToolStripMenuItem
+            // empresaToolStripMenuItem1
             // 
-            this.productosServiciosToolStripMenuItem.Name = "productosServiciosToolStripMenuItem";
-            this.productosServiciosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.productosServiciosToolStripMenuItem.Text = "Productos/Servicios";
-            this.productosServiciosToolStripMenuItem.Click += new System.EventHandler(this.productosServiciosToolStripMenuItem_Click);
+            this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem1";
+            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empresaToolStripMenuItem.Text = "Empresa";
+            this.empresaToolStripMenuItem.Click += new System.EventHandler(this.empresaToolStripMenuItem1_Click);
             // 
             // Main
             // 
@@ -141,6 +159,8 @@ namespace Facturador
         private System.Windows.Forms.ToolStripMenuItem catálogosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productosServiciosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configuraciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empresaToolStripMenuItem;
     }
 }
 

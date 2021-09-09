@@ -40,8 +40,10 @@ namespace Facturador
         {
             if (Objeto == typeof(Cliente))
                 dataGridViewMain.DataSource = db.ClntObj.ToList();
-            else
+            else if (Objeto == typeof(Producto))
                 dataGridViewMain.DataSource = db.PrdtObj.ToList();
+            else
+                dataGridViewMain.DataSource = db.EmprsObj.ToList();
         }
     }
 }
