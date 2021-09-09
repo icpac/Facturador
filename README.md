@@ -9,5 +9,5 @@ Windows Forms
 
 .Net
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](/facturador.png)
 
