@@ -94,11 +94,28 @@
     <Compile Include="BusinessObjects\Empresa.cs" />
     <Compile Include="BusinessObjects\Producto.cs" />
     <Compile Include="DataContext\FacturadorDbContext.cs" />
+    <Compile Include="Migrations\202109131109121_Facturar.cs" />
+    <Compile Include="Migrations\202109131109121_Facturar.designer.cs">
+      <DependentUpon>202109131109121_Facturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109131113315_Facturar1.cs" />
+    <Compile Include="Migrations\202109131113315_Facturar1.designer.cs">
+      <DependentUpon>202109131113315_Facturar1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109131109121_Facturar.resx">
+      <DependentUpon>202109131109121_Facturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109131113315_Facturar1.resx">
+      <DependentUpon>202109131113315_Facturar1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

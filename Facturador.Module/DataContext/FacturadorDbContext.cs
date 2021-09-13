@@ -19,6 +19,9 @@ namespace Facturador.Module.DataContext
 {
     public class FacturadorDbContext : DbContext
     {
+        public FacturadorDbContext() : base(nameOrConnectionString: "ConnecFactura")
+        {
+        }
         public FacturadorDbContext(string conn) : base(nameOrConnectionString: conn)
         {
         }

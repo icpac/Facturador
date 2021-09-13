@@ -20,6 +20,7 @@ namespace Facturador.Module.BusinessObjects
     {
         [Key]
         public string Oid { get; set; }
+        [StringLength(15)]
         public string Rfc { get; set; }
         public string Nombre { get; set; }
     }

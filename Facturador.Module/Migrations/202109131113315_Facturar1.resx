@@ -117,7 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="contextMenuStripCnsta.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAO1Z227bOBB9X2D/QdBzasYpumgDuUVqx4tia7uIk77T0ljhLkVpSSqIv60P+0n7Czu632UrdtNuUeQhFsU5c+EhZ4b698s/1rtHjxsPIBXzxcQcj85NA4TtO0y4EzPU2xevzXdvf/3Funa8R+NzNu9lNA8lhZqY91oHl4Qo+x48qkYes6Wv/K0e2b5HqOOTi/PzN2Q8JoAQJmIZhnUTCs08iB/wceoLGwIdUr7wHeAqHcc36xjVWFIPVEBtmJhzautQIq4c4eSQw2hGNUUEDY/aNK44o2jUGvjWNKgQvqYaTb68U7DW0hfuOsABym93AeC8LeUKUlcui+mHenV+EXlFCsEMyg6V9r2BgOOXaZhIXfxJwTbzMGIgrzHgehd5HQdzYk45A4yZadR1XU65jOa1hfp9qJgApVabP8HWapSCnBmNqWc5WZBT0d+ZMQ05zoGJgFBLys+MT+GGM/sP2N36f4GYiJDzss1oNb6rDODQJ+kHIPXuBrapJyvmmAapCpK6ZC5XFkrcRF4g201jQR8/gnD1Pe6Di9emMWeP4GQjKVHuBMPNgUJahvi4RJPphkP+nvQqvdnafUpfHaSzX8XS9zYSerTgz8FqLFLQp5dU114gQdHjSJWC/CTVKUj1lOV+Jla1uAIuZgXxrdiL1jihrf3j6Juh/OTvYfydcvrw9ak1A2VLFthxMn1GekWFCUV+yNSOghOzTV60NOiG1UrKOJWqrDqXYK9BV5O5Mo3ClqQIGuV5nvRDpKduG0R+qu+ByJjfhlHsrbbY5VEqKj+SlH5ZiUg6akRrQYMAl7FUM6YjxjopGKcv1sPLJy/BILZqqaJya3NN2pfUhdpbVI2WzplUOipRNzQi0tTxGtPaONER6Uxjbdnr50ER/kwg+l1nYEsBndOlhliEdY6e4hmtY6chN6woKBuScRlPOZVtp83U56EnOs+sPvk48ZXl44HD5bOkVobIxpooFqkFoB5z0gh67fStL+JBS5xvy9Mtcbadhy9xp+SPscSdVmRlScWSbPC7oUpx/J6OK/mxPZws3aJfiy1pJVFGSIcOx6jUCWWkyotnXvNGmqxPybXn6bKWFq00Re2/X2nkrGSKaWCgHpgT5atl4Kq/eTGyoIJtQemkYjXfjH4bXYxrVzHfz7UIUcrhh92NfIO6+4FK+57KZuH99K6wFfJVGXF4C5jUrX0Ig+8Mfoxg7w/M8aHd2zifcHXaT/H/1/JUOsynhLeleTw2xPW+sNkqHNTx9TV8ycE9MYP4RgENTywd2BD29YMdGob2i73tYoeOo/vJZkK0SPmzhIWLztwCIvpIIcCO0k4Bms35ILZ+xhn0r2xRNqVGqQVo6uBSX0nNtliC4WsblIovJD5THsZh3IDzQaxCHYT6SinwNnxX9tci/frjprlqs7UKoid1ChfQTIYuwEq8Dxl3crvnzT3ZBRGx/nfA8TidrzX+B3eXIy19cSBQGr4ZBCAcpPcteAFHMLUS63jzD7ftTsFHcKm9y8qcbpD9C1ENuzVj1JXUUylGIR99aiPRt7a3/wEdnN5vnRsAAA==</value>
+  </data>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>public</value>
+  </data>
 </root>

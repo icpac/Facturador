@@ -45,5 +45,10 @@ namespace Facturador
             else
                 dataGridViewMain.DataSource = db.Empresas.ToList();
         }
+
+        private void toolStripMenuItemAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
