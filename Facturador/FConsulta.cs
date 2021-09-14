@@ -25,6 +25,11 @@ namespace Facturador
         FacturadorDbContext db;
         Type Objeto;
 
+        public FConsulta()
+        {
+            InitializeComponent();
+        }
+
         public FConsulta(string conn, Type obj)
         {
             InitializeComponent();
@@ -38,12 +43,16 @@ namespace Facturador
 
         private void FConsulta_Load(object sender, EventArgs e)
         {
-            if (Objeto == typeof(Cliente))
-                dataGridViewMain.DataSource = db.Clientes.ToList();
-            else if (Objeto == typeof(Producto))
-                dataGridViewMain.DataSource = db.Productos.ToList();
-            else
-                dataGridViewMain.DataSource = db.Empresas.ToList();
+            /*
+            if (db != null)
+            {
+                if (Objeto == typeof(Cliente))
+                    dataGridViewMain.DataSource = db.Clientes.ToList();
+                else if (Objeto == typeof(Producto))
+                    dataGridViewMain.DataSource = db.Productos.ToList();
+                else
+                    dataGridViewMain.DataSource = db.Empresas.ToList();
+            }*/
         }
 
         private void toolStripMenuItemAdd_Click(object sender, EventArgs e)

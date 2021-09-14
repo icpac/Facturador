@@ -19,9 +19,13 @@ namespace Facturador.Module.BusinessObjects
     public class Cliente
     {
         [Key]
-        public string Oid { get; set; }
+        public int Id { get; set; }
+        /*
+        [Key]
+        public string Oid { get; set; }*/
         [StringLength(15)]
         public string Rfc { get; set; }
+        [StringLength(150)]
         public string Nombre { get; set; }
     }
 }

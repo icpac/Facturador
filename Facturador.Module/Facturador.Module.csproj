@@ -102,6 +102,14 @@
     <Compile Include="Migrations\202109131113315_Facturar1.designer.cs">
       <DependentUpon>202109131113315_Facturar1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109141122442_Facturar2.cs" />
+    <Compile Include="Migrations\202109141122442_Facturar2.designer.cs">
+      <DependentUpon>202109141122442_Facturar2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109141342363_Facturar3.cs" />
+    <Compile Include="Migrations\202109141342363_Facturar3.designer.cs">
+      <DependentUpon>202109141342363_Facturar3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -115,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109131113315_Facturar1.resx">
       <DependentUpon>202109131113315_Facturar1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109141122442_Facturar2.resx">
+      <DependentUpon>202109141122442_Facturar2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109141342363_Facturar3.resx">
+      <DependentUpon>202109141342363_Facturar3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
