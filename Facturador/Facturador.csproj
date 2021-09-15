@@ -36,6 +36,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -58,6 +67,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
@@ -97,27 +107,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionString.cs" />
-    <Compile Include="FConsulta.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FConsulta.cs" />
     <Compile Include="FConsulta.Designer.cs">
       <DependentUpon>FConsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="FCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FCliente.cs" />
     <Compile Include="FCliente.Designer.cs">
       <DependentUpon>FCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FProducto.cs">
-      <SubType>Form</SubType>
+    <Compile Include="FDocumento.cs" />
+    <Compile Include="FDocumento.Designer.cs">
+      <DependentUpon>FDocumento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FProducto.cs" />
     <Compile Include="FProducto.Designer.cs">
       <DependentUpon>FProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Main.cs" />
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
@@ -129,12 +135,16 @@
     <EmbeddedResource Include="FConsulta.resx">
       <DependentUpon>FConsulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FDocumento.resx">
+      <DependentUpon>FDocumento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FProducto.resx">
       <DependentUpon>FProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -146,6 +156,7 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Facturador.Module.BusinessObjects.Cliente.datasource" />
+    <None Include="Properties\DataSources\Facturador.Module.BusinessObjects.Documento.datasource" />
     <None Include="Properties\DataSources\Facturador.Module.BusinessObjects.Producto.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

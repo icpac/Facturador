@@ -39,5 +39,7 @@ namespace Facturador.Module.DataContext
         public virtual DbSet<Producto> Productos { get; set; }
         
         public virtual DbSet<Empresa> Empresas { get; set; }
+
+        public virtual DbSet<Documento> Documentos { get; set; }
     }
 }

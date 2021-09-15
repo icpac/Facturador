@@ -36,10 +36,12 @@ namespace Facturador
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosServiciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
-            this.empresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.documentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.facturasRecibosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +50,7 @@ namespace Facturador
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivosToolStripMenuItem,
             this.catálogosToolStripMenuItem,
+            this.documentosToolStripMenuItem,
             this.configuraciónToolStripMenuItem,
             this.ayudaToolStripMenuItem});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
@@ -83,14 +86,14 @@ namespace Facturador
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // productosServiciosToolStripMenuItem
             // 
             this.productosServiciosToolStripMenuItem.Name = "productosServiciosToolStripMenuItem";
-            this.productosServiciosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosServiciosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.productosServiciosToolStripMenuItem.Text = "Productos/Servicios";
             this.productosServiciosToolStripMenuItem.Click += new System.EventHandler(this.productosServiciosToolStripMenuItem_Click);
             // 
@@ -101,6 +104,13 @@ namespace Facturador
             this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
             this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.configuraciónToolStripMenuItem.Text = "Configuración";
+            // 
+            // empresaToolStripMenuItem
+            // 
+            this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem";
+            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empresaToolStripMenuItem.Text = "Empresa";
+            this.empresaToolStripMenuItem.Click += new System.EventHandler(this.empresaToolStripMenuItem1_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -124,12 +134,20 @@ namespace Facturador
             this.statusStripMain.TabIndex = 1;
             this.statusStripMain.Text = "statusStrip1";
             // 
-            // empresaToolStripMenuItem1
+            // documentosToolStripMenuItem
             // 
-            this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem1";
-            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.empresaToolStripMenuItem.Text = "Empresa";
-            this.empresaToolStripMenuItem.Click += new System.EventHandler(this.empresaToolStripMenuItem1_Click);
+            this.documentosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.facturasRecibosToolStripMenuItem});
+            this.documentosToolStripMenuItem.Name = "documentosToolStripMenuItem";
+            this.documentosToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.documentosToolStripMenuItem.Text = "Documentos";
+            // 
+            // facturasRecibosToolStripMenuItem
+            // 
+            this.facturasRecibosToolStripMenuItem.Name = "facturasRecibosToolStripMenuItem";
+            this.facturasRecibosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.facturasRecibosToolStripMenuItem.Text = "Facturas/Recibos";
+            this.facturasRecibosToolStripMenuItem.Click += new System.EventHandler(this.facturasRecibosToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -161,6 +179,8 @@ namespace Facturador
         private System.Windows.Forms.ToolStripMenuItem productosServiciosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuraciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empresaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem documentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem facturasRecibosToolStripMenuItem;
     }
 }
 

@@ -197,6 +197,7 @@ namespace Facturador
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FProducto";
+            this.Text = "Productos";
             this.Load += new System.EventHandler(this.FProducto_Load);
             this.panelDown.ResumeLayout(false);
             this.panelBtns.ResumeLayout(false);

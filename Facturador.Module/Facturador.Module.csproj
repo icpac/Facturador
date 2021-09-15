@@ -91,7 +91,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\Cliente.cs" />
+    <Compile Include="BusinessObjects\Documento.cs" />
     <Compile Include="BusinessObjects\Empresa.cs" />
+    <Compile Include="BusinessObjects\ItemDocumento.cs" />
     <Compile Include="BusinessObjects\Producto.cs" />
     <Compile Include="DataContext\FacturadorDbContext.cs" />
     <Compile Include="Migrations\202109131109121_Facturar.cs" />
@@ -113,6 +115,26 @@
     <Compile Include="Migrations\202109142256244_Facturar4.cs" />
     <Compile Include="Migrations\202109142256244_Facturar4.designer.cs">
       <DependentUpon>202109142256244_Facturar4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109152039153_DocumentoAdded.cs" />
+    <Compile Include="Migrations\202109152039153_DocumentoAdded.designer.cs">
+      <DependentUpon>202109152039153_DocumentoAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109152044280_DocumentoAdded1.cs" />
+    <Compile Include="Migrations\202109152044280_DocumentoAdded1.designer.cs">
+      <DependentUpon>202109152044280_DocumentoAdded1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109152047382_Facturar5.cs" />
+    <Compile Include="Migrations\202109152047382_Facturar5.designer.cs">
+      <DependentUpon>202109152047382_Facturar5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109152051405_Facturar6.cs" />
+    <Compile Include="Migrations\202109152051405_Facturar6.designer.cs">
+      <DependentUpon>202109152051405_Facturar6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109152110371_Cliente.cs" />
+    <Compile Include="Migrations\202109152110371_Cliente.designer.cs">
+      <DependentUpon>202109152110371_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -136,6 +158,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109142256244_Facturar4.resx">
       <DependentUpon>202109142256244_Facturar4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109152039153_DocumentoAdded.resx">
+      <DependentUpon>202109152039153_DocumentoAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109152044280_DocumentoAdded1.resx">
+      <DependentUpon>202109152044280_DocumentoAdded1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109152047382_Facturar5.resx">
+      <DependentUpon>202109152047382_Facturar5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109152051405_Facturar6.resx">
+      <DependentUpon>202109152051405_Facturar6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109152110371_Cliente.resx">
+      <DependentUpon>202109152110371_Cliente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -56,5 +56,13 @@ namespace Facturador
             cnst.Parent = MdiParent;
             cnst.Show();
         }
+
+        private void facturasRecibosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FDocumento cnst = new FDocumento();
+
+            cnst.Parent = MdiParent;
+            cnst.Show();
+        }
     }
 }
