@@ -110,6 +110,10 @@
     <Compile Include="Migrations\202109141342363_Facturar3.designer.cs">
       <DependentUpon>202109141342363_Facturar3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109142256244_Facturar4.cs" />
+    <Compile Include="Migrations\202109142256244_Facturar4.designer.cs">
+      <DependentUpon>202109142256244_Facturar4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -129,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109141342363_Facturar3.resx">
       <DependentUpon>202109141342363_Facturar3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109142256244_Facturar4.resx">
+      <DependentUpon>202109142256244_Facturar4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

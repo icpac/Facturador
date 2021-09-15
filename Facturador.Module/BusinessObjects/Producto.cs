@@ -19,8 +19,12 @@ namespace Facturador.Module.BusinessObjects
     public class Producto
     {
         [Key]
-        public string Oid { get; set; }
+        // public string Oid { get; set; }
+        public int Id { get; set; }
+        [StringLength(40)]
         public string Clave { get; set; }
+        [StringLength(100)]
         public string Descripcion { get; set; }
+        public decimal Precio { get; set; }
     }
 }

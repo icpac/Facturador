@@ -27,5 +27,7 @@ namespace Facturador.Module.BusinessObjects
         public string Rfc { get; set; }
         [StringLength(150)]
         public string Nombre { get; set; }
+        [StringLength(50)]
+        public string Correo { get; set; }
     }
 }

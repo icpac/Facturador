@@ -37,7 +37,11 @@ namespace Facturador
 
         private void productosServiciosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Consulta(typeof(Producto));
+            //Consulta(typeof(Producto));
+            FProducto cnst = new FProducto(ConnectionString);
+
+            cnst.Parent = MdiParent;
+            cnst.Show();
         }
 
         private void empresaToolStripMenuItem1_Click(object sender, EventArgs e)

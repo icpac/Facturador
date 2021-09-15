@@ -17,6 +17,8 @@ using Facturador.Module.BusinessObjects;
 
 namespace Facturador.Module.DataContext
 {
+    // add-migration Facturar/update-database
+
     public class FacturadorDbContext : DbContext
     {
         public FacturadorDbContext() : base(nameOrConnectionString: "ConnecFactura")

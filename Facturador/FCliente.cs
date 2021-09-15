@@ -26,12 +26,12 @@ namespace Facturador
             {
                 bindingSourceClnt.DataSource = db.Clientes.ToList();
             }
-            panel1.Enabled = false;
+            splitContainer1.Panel2.Enabled = false;
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            panel1.Enabled = true;
+            splitContainer1.Panel2.Enabled = true;
             bindingSourceClnt.Add(new Cliente());
             bindingSourceClnt.MoveLast();
             textBoxRfc.Focus();
@@ -39,14 +39,14 @@ namespace Facturador
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-            panel1.Enabled = true;
+            splitContainer1.Panel2.Enabled = true;
             textBoxRfc.Focus();
             Cliente obj = bindingSourceClnt.Current as Cliente;
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            panel1.Enabled = false;
+            splitContainer1.Panel2.Enabled = false;
             bindingSourceClnt.ResetBindings(false);
             FCliente_Load(sender, e);
         }
@@ -75,7 +75,7 @@ namespace Facturador
                         db.SaveChanges();
                         MessageBox.Show(this, "Borrado satisfactoriamente !");
                         bindingSourceClnt.RemoveCurrent();
-                        panel1.Enabled = false;
+                        splitContainer1.Panel2.Enabled = false;
                     }
                 }
             }
@@ -99,7 +99,7 @@ namespace Facturador
                     db.SaveChanges();
                     MessageBox.Show(this, "Guardado satisfactoriamente !");
                     dataGridView1.Refresh();
-                    panel1.Enabled = false;
+                    splitContainer1.Panel2.Enabled = false;
                 }
             }
         }
