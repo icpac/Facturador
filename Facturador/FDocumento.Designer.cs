@@ -47,8 +47,6 @@ namespace Facturador
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.documentoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.idSpinEdit = new DevExpress.XtraEditors.SpinEdit();
-            this.serieTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.itemsDocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itemsDocumentoDataGridView = new System.Windows.Forms.DataGridView();
             this.documentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -67,8 +65,6 @@ namespace Facturador
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.documentoBindingNavigator)).BeginInit();
             this.documentoBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.idSpinEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.serieTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemsDocumentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemsDocumentoDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentoBindingSource)).BeginInit();
@@ -86,9 +82,7 @@ namespace Facturador
             this.splitContainer1.Panel2.Controls.Add(this.clienteIdComboBox);
             this.splitContainer1.Panel2.Controls.Add(this.itemsDocumentoDataGridView);
             this.splitContainer1.Panel2.Controls.Add(idLabel);
-            this.splitContainer1.Panel2.Controls.Add(this.idSpinEdit);
             this.splitContainer1.Panel2.Controls.Add(serieLabel);
-            this.splitContainer1.Panel2.Controls.Add(this.serieTextEdit);
             this.splitContainer1.Size = new System.Drawing.Size(800, 400);
             this.splitContainer1.SplitterDistance = 69;
             // 
@@ -235,29 +229,6 @@ namespace Facturador
             this.documentoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.documentoBindingNavigatorSaveItem.Text = "Guardar datos";
             // 
-            // idSpinEdit
-            // 
-            this.idSpinEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.documentoBindingSource, "Id", true));
-            this.idSpinEdit.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.idSpinEdit.Location = new System.Drawing.Point(76, 29);
-            this.idSpinEdit.Name = "idSpinEdit";
-            this.idSpinEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.idSpinEdit.Size = new System.Drawing.Size(100, 20);
-            this.idSpinEdit.TabIndex = 1;
-            // 
-            // serieTextEdit
-            // 
-            this.serieTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.documentoBindingSource, "Serie", true));
-            this.serieTextEdit.Location = new System.Drawing.Point(76, 55);
-            this.serieTextEdit.Name = "serieTextEdit";
-            this.serieTextEdit.Size = new System.Drawing.Size(100, 20);
-            this.serieTextEdit.TabIndex = 3;
-            // 
             // itemsDocumentoBindingSource
             // 
             this.itemsDocumentoBindingSource.DataMember = "ItemsDocumento";
@@ -342,8 +313,6 @@ namespace Facturador
             ((System.ComponentModel.ISupportInitialize)(this.documentoBindingNavigator)).EndInit();
             this.documentoBindingNavigator.ResumeLayout(false);
             this.documentoBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.idSpinEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.serieTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemsDocumentoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemsDocumentoDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentoBindingSource)).EndInit();
@@ -354,9 +323,7 @@ namespace Facturador
 
         #endregion
 
-        private DevExpress.XtraEditors.SpinEdit idSpinEdit;
         private System.Windows.Forms.BindingSource documentoBindingSource;
-        private DevExpress.XtraEditors.TextEdit serieTextEdit;
         private System.Windows.Forms.BindingNavigator documentoBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
